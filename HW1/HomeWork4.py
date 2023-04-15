@@ -3,7 +3,7 @@
 n = int(input('Введите длину плитки'))
 m = int(input('Введите ширину плитки'))
 k = int(input('Сколько долек хотите отломить?'))
-if k < n * m and ((k % n == 0) or (k % m == 0)):
+if k < n * m and (k % n == 0) or (k % m == 0):
     print('Можно')
 else:
     print('Нельзя')
