@@ -11,10 +11,11 @@ X = int(input("Введите искомое число: "))
 
 num = 0
 for i in range(len(A)):
-    if X == A[i]:
-        num = i
-print(A[num])
-
-if (X-A[i])<X-num :
-    num = i
-print(A[num])
+    temp = abs(A[i] - X)
+    temp2 = abs(A[i-1] - X)
+    if temp == 0:
+        print(A[i])
+        break
+    if temp < temp2:
+       temp3 = A[i]
+print(temp3)
