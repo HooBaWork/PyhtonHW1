@@ -11,10 +11,14 @@ X = int(input("Введите искомое число: "))
 
 i = 0
 temp3 = abs(A[0] - X)
+temp2 = 0
 while i < len(A):
+    if A[i] == X:
+        print("Искомое число", A[i], "под номером", i)
+        break
     temp = abs(A[i] - X)
     if temp < temp3:
         temp3 = temp
         temp2 = A[i]
     i+=1
-print(temp2)
+    print("Такого числа нет.Ближайшее число: ", temp2)
