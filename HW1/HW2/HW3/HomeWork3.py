@@ -17,6 +17,7 @@
 #ruLst5 = Ж, З, Х, Ц, Ч
 #ruLst8 = Ш, Э, Ю
 #ruLst10 = Ф, Щ, Ъ
+#1111
 import re
 
 letter = str(input("Введите cлово: "))
