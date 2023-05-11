@@ -9,13 +9,12 @@ A = [randint(-9, 9) for i in range(N)]
 print(A)
 X = int(input("Введите искомое число: "))
 
-num = 0
-for i in range(len(A)):
+i = 0
+temp3 = abs(A[0] - X)
+while i < len(A):
     temp = abs(A[i] - X)
-    temp2 = abs(A[i-1] - X)
-    if temp == 0:
-        print(A[i])
-        break
-    if temp < temp2:
-       temp3 = A[i]
-print(temp3)
+    if temp < temp3:
+        temp3 = temp
+        temp2 = A[i]
+    i+=1
+print(temp2)
