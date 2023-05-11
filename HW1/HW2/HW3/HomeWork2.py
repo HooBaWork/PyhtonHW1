@@ -18,5 +18,3 @@ while i < len(A):
         temp2 = A[i]
     i+=1
 print(temp2)
-        
-    
