@@ -21,4 +21,4 @@ while i < len(A):
         temp3 = temp
         temp2 = A[i]
     print("Такого числа нет.Ближайшее число: ", temp2)
-    i+=1
+    i += 1
